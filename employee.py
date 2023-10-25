@@ -27,7 +27,7 @@ class Employee:
             str += f'monthly salary of {self.salary}'
         if self.commission:
             if self.contracts:
-                str += f' and receives a commission for {self.contracts} contract at {self.commission}/contract'
+                str += f' and receives a commission for {self.contracts} contract(s) at {self.commission}/contract'
             else:
                 str += f' and receives a bonus commission of {self.commission}'
         str += f'. Their total pay is {self.get_pay()}.'
