@@ -20,7 +20,7 @@ class Employee:
 
 
     def __str__(self):
-        str = f'^{self.name} works on a '
+        str = f'{self.name} works on a '
         if self.hours:
             str += f'contract of {self.hours} hours at {self.salary}/hour'
         else:
@@ -30,7 +30,7 @@ class Employee:
                 str += f' and receives a commission for {self.contracts} contract\(s\) at {self.commission}/contract'
             else:
                 str += f' and receives a bonus commission of {self.commission}'
-        str += f'.\s+Their total pay is {self.get_pay()}.$'
+        str += f'. Their total pay is {self.get_pay()}.'
         return str
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
